@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href=".\portFolioFiles\images\favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  // var height = window.screen.height-70;
+  // $("#rightNavheight").css("max-height", height);
+</script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.fullName{
+  color: white;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: #5f9ea08f;
+ 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+}
+.margin5Px{ 
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.w3-display-container:hover .overlay {
+  opacity: 1;
+}
+.projectTitle{
+}
+.sideNavbar .highLightSkills:hover{
+  color:brown;
+}
+.active{
+  color:brown;
+}
+</style>
+<script type="text/javascript">
+
+    // A $( document ).ready() block.
+    $(document).ready(function(){
+      $(document).on('click', '.highLightSkills', function(e){
+        var id = e.currentTarget.id;
+        $('.sideNavbar a').removeClass('active');
+        $('.sideNavbar  #'+id).addClass('active');
+
+      });
+    });
+</script>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third" >
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src=".\portFolioFiles\images\portfolioPic.png" style="width:100%; cursor:zoom-in;" alt="Avatar" onclick="document.getElementById('zoomPic').style.display='block'">
+           <div class="overlay fullName">Chandrasekhar</div>
+            <div id="zoomPic" class="w3-modal" onclick="this.style.display='none'">
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img src=".\portFolioFiles\images\portfolioPic.png"  style="width:100%;">
+                </div>
+              </div>
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+           
+            
+          </div>
+        </div>
+        <div class="w3-container sideNavbar">
+          <p class = 'margin5Px'><i class="fa fa-male fa-fw w3-margin-right w3-large w3-text-teal"></i>Chandrasekhar Reddy Muthyala</p>
+          <p class = 'margin5Px'><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full-stack developer/Data Scientist</p>
+          <p class = 'margin5Px'><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto: cmuth001@odu.edu" style = 'color: blueviolet;' >cmuth001@odu.edu</a></p>
+          <p class = 'margin5Px'><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 (757)-546-4188</p>
+          <p class = 'margin5Px'><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Norfolk, VA-23508</p>
+          <a href = 'https://www.cs.odu.edu/~cmuthyal/' style = 'color: blueviolet;'><i class="fa fa-external-link fa-fw w3-margin-right w3-large w3-text-teal" ></i>https://www.cs.odu.edu/~cmuthyal/</a>
+          <hr style= 'margin:10px;'>
+          
+          <a href = '#aboutMe'  class="w3-large highLightSkills " id='aboutLink'><b><i class="fa  fa-thumb-tack fa-fw w3-margin-right w3-text-teal"></i>About</b></a><br>
+          <a href = '#honorAndAwards' class="w3-large highLightSkills" id = 'awardsLink'><b><i class="fa fa-trophy fa-fw w3-margin-right w3-text-teal"></i>Honor & Awards</b></a><br>
+          <a href = '#workExperience' class="w3-large highLightSkills"id = 'experienceLink' ><b><i class="fa fa-suitcase fa-fw w3-margin-right w3-text-teal"></i>Work Experience</b></a><br>
+<!--           <a href = '#skills' class="w3-large" ><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></a><br> -->
+
+          <a href  = '#education' class="w3-large w3-text-theme highLightSkills" id = 'educationLink'><b><i class="fa fa-black-tie fa-fw w3-margin-right w3-text-teal"></i>Education</b></a><br>
+          <a href = '#projects' class="w3-large highLightSkills" id = 'projectLink'><b><i class="fa fa-product-hunt fa-fw w3-margin-right w3-text-teal"></i>Projects</b></a><br>
+          <a href  = '#publication' class="w3-large w3-text-theme highLightSkills" id ='publicationLink'><b><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Publications</b></a><br>
+          <a href = '#certifications' class="w3-large highLightSkills" id='certLink' ><b><i class="fa fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Certifications</b></a><br>
+          
+          <hr style= 'margin: 5px;'>
+          <div style = 'font-size: 34px;text-align: center;'>
+            <a href = 'https://www.linkedin.com/in/chandra-sekhar-reddy-muthyala-566b9b76/' target = '_blank' style= 'color:#0077B5;'><i class="fa  fa-linkedin-square "></i></a>
+            <a href = 'https://github.com/cmuth001' target = '_blank' style= 'color:black;'><i class="fa  fa-github "></i></a>
+          </div>    
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird" id = 'rightNavheight' style= 'max-height: 1000px;overflow-y: auto;'>
+    
+      <!-- About me -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id  = 'aboutMe'>
+        <h2 class="w3-text-grey "><i class="fa fa-thumb-tack fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
+        <div class="w3-container">
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          
+        </div>
+        <div class="w3-container ">
+          <div class = 'w3-row '>
+            <ul >
+              <li style= 'float:left; margin-right:50px;' title= 'Resume'> <a href=".\portFolioFiles\pdfs\Chandrasekhar Reddy.pdf" download>Resume</a></li>
+              <li title = 'CV'><a href=".\portFolioFiles\pdfs\Chandrasekhar Reddy.pdf" download>Cover Letter</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        
+      </div>
+      <!-- Honor And Awards -->
+       <div class="w3-container w3-card w3-white  w3-margin-bottom" id = 'honorAndAwards'>
+        <h2 class="w3-text-grey "><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Honor & Awards</h2>
+        <div class="w3-container">
+          <div class = 'w3-row'>
+              <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>Best Project Award || Dominion Enterprises</b></h5>
+              <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 </h6>
+          </div>
+          <div class = 'w3-row'>
+            <ul class="honors">
+              <li>Each year Dominion Enterprises (DE) conducts Hackathon(Hack U6) to engage student programmers, developers & designers in learning new skills and business applications.</li>
+              <li>We as a team of five have developed a google assistant for their business application from the scratch in 2 days andawarded with 3rd prize out of 11 entries into the competition.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id ='workExperience' >
+        <h2 class="w3-text-grey "><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <div class = 'w3-row'>
+            <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>Full Stack Developer / Old Dominion University</b></h5>
+            <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          </div>
+          <div class = 'w3-row'>
+            <ul class="OduProjects">
+              <li><label class = 'projectTitle'>Learning Management System(Blackboard): </label>Collaborated with ODU Nursing School to develop a portal aimed at Advanced Practice Nurse for students to train within medically-underserved, rural areas in Virginia.Integration of Google Analytics, visualization charts aided faculty to analyse the performance of preceptors.This impacted two other schools to join the program and thus enhanced to Multi-Org LMS.</li>
+              <li><label class = 'projectTitle'>Student Appointment System: </label> Developing a friendly web interface to manage entire process involved in appointing a students as a Graduate assistant for
+computer science department and keep track of the appointment status.</li>
+              <li><label class = 'projectTitle'>Agitation Detection: </label> Working on detection of agitation in Dementia patients using various sensors values such as accelerometer, gyroscope,
+heart rate and decibel level obtained from off-the shelf-devices.Developed machine learning models to profile the patients, detect anger and alert the authorities immediately.</li>
+              <li> Designed a visualization tool for the College of Business to analyze US employment data extracted from excel sheets.</li>
+            </ul>
+
+
+            
+          </div>
+        </div>
+        <div class="w3-container">
+          <div class = 'w3-row'>
+            <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>R&D Engineer/ Synopsys Inc.</b></h5>
+            <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - Jul 2017</h6>
+          </div>
+          <div class = 'w3-row'>
+            <ul class="synopsysProject">
+              <li>Developed a single page web-application using RESTful web services, for managing and generating reports for interoperability test cases of Synopsys IP’s.Was involved in the complete development cycle involving planning, designing, development, testing, and deployment of these portals.</li>
+              <li>In a team of 4, developed an automated system which can find the hardcoded paths associated with all Verification Group(VG) product binaries and libraries, with the nightly builds every day and make sure there are no hard coded dependencies with any of those file.</li>
+              <li>Written test cases for ”Automated Testing to find hardcoded paths” and Test case to identify the newly added files and missing files associated with all binaries and libraries of VG products. Writing scripts for identifying Hard coded paths, Absolute paths from “MAKE FILES” using PYTHON language.</li>
+              <li>Fixing the errors generated by GCC after removing the -Wno- switches from Make files.</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- education -->
+      <div class="w3-container w3-card w3-white  w3-margin-bottom" id = 'education'>
+        <h2 class="w3-text-grey "><i class="fa fa-black-tie fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+           <ul class="w3-ul ">
+              <li class="w3-bar" style = "border: 0;    padding: 0;">
+                <img src=".\portFolioFiles\images\odu.png" class="w3-bar-item  w3-hide-small" style="width:85px">
+                    <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>Masters in Computer Science, Old Dominion University</b></h5>
+                    <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019</h6>
+                    <br>
+                    <p>CGPA: 3.8/4</p>
+              </li>
+              <li class="w3-bar" style = "border: 0;    padding: 0;">
+                <img src=".\portFolioFiles\images\amrita.png" class="w3-bar-item  w3-hide-small" style="width:85px">
+                    <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>Bachelor of Technology in Computer Science, Amrita University</b></h5>
+                    <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2015</h6>
+                    <br>
+                    <p>CGPA: 7.65/10</p>
+              </li>
+              <li class="w3-bar" style = "border: 0;    padding: 0;">
+                <img src=".\portFolioFiles\images\w3schools.png" class="w3-bar-item  w3-hide-small" style="width:85px">
+                    <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>W3Schools.com</b></h5>
+                    <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever&nbsp&nbsp&nbsp&nbsp</h6><br>
+                    <p>Web Development! My problem Solver </p>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <!-- Publications -->
+      <div class="w3-container w3-card w3-white  w3-margin-bottom" id = 'projects'>
+        <h2 class="w3-text-grey "><i class="fa fa-product-hunt fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+        <div class="w3-container">
+          <div class="w3-row">
+              <div class=" w3-third " style='border: 2px solid #80808029;' >
+                <img src=".\portFolioFiles\images\idyeah.PNG"  alt="idYeah!" style="width:100%;height: 250px;">
+                <div class="w3-container w3-center">
+                  <h4>idYeah! <a href="https://github.com/cmuth001/Chat-Room-Application-PHP-idYeah" target='_blank'><i class="fa  fa-github "></i></a></h4><p>Chat-Room-Application</p>
+                </div>
+              </div>
+              <div class=" w3-third  " style='border: 2px solid #80808029;'>
+                <img src=".\portFolioFiles\images\twitterFriendsParadox.PNG" alt="Friendship Paradox" style="width:100%;height: 250px;">
+                <div class="w3-container w3-center">
+                 <h4>Twitter Data Scraping <a href="https://github.com/cmuth001/Web-sciences-CS532/blob/master/Assignments/A4/assignment4.pdf" target='_blank'><i class="fa  fa-github "></i></a></h4><p>Friendship Paradox</p>
+                </div>
+              </div>
+              <div class=" w3-third " style='border: 2px solid #80808029;'>
+                <img src=".\portFolioFiles\images\movieLens.png" alt="Movie Lens data" style="width:100%;height: 250px;">
+                <div class="w3-container w3-center">
+                 <h4>Ranking<a href="https://github.com/cmuth001/Web-sciences-CS532/blob/master/Assignments/A6/assignment6.pdf" target='_blank'> <i class="fa  fa-github "></i></a></h4><p>IMDB vs Movie Lense</p>
+                </div>
+              </div>
+              <br>
+              <div class=" w3-third " style='border: 2px solid #80808029;'>
+                <img src=".\portFolioFiles\images\agitation.PNG" alt="Movie Lens data" style="width:100%;height: 250px;">
+                <div class="w3-container w3-center">
+                 <h4>Agitation Detection </h4><p>On Alzheimers Patients</p>
+                </div>
+              </div>
+            </div>
+            <br>
+      </div>
+    </div>
+
+      <!-- Publications -->
+      <div class="w3-container w3-card w3-white  w3-margin-bottom" id = 'publication'>
+        <h2 class="w3-text-grey "><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
+        <div class="w3-container">
+          <div class = 'w3-row'>
+              <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>Biometric system || <a href="https://link.springer.com/chapter/10.1007/978-81-322-2734-2_1" target = "_blank" style = 'color: blueviolet;'>Spingers</a></b></h5>
+              <!-- <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 </h6> -->
+          </div>
+          <div class = 'w3-row'>
+            <ul>
+              <li>
+                Boggaram, A. S., Mallampalli, P. R., Muthyala, C. R. , & Manjusha, R. (2016). A Novel Approach for Biometric Authentication System Using Ear, 2D Face and 3D Face Modalities, New Delhi.
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Certifications -->
+      <div class="w3-container w3-card w3-white  w3-margin-bottom" id = 'certifications'>
+        <h2 class="w3-text-grey "><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certifications</h2>
+        <div class="w3-container">
+          <div class = 'w3-row'>
+              <h5 class="w3-opacity" style= 'float:left;margin: 0;'><b>Online Course Certifications:</b></h5>
+              <!-- <h6 class="w3-text-teal" style= 'float:right;margin: 0;'><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 </h6> -->
+          </div>
+          <div class = 'w3-row'>
+            <ul class="cert">
+              <li><label style= 'font-weight:900;'>HTML5 Animated Image Gallery: </label>in Eduonix Learning Solutions Pvt Ltd.</li>
+              <li><label style= 'font-weight:900;'>Python 3 Tutorial: </label>in SoloLearn, License 1073-2777149.</li>
+              <li><label style= 'font-weight:900;'>Using Python to Access Web Data: </label>by University of Michigan (Grade Achieved: 97%).</li>
+              <li><label style= 'font-weight:900;'>Using Databases with Python: </label>by University of Michigan (Grade Achieved: 98.9%).</li>
+              <li><label style= 'font-weight:900;'>Python Data structures: </label>by University of Michigan (Grade Achieved: 100 %).</li>
+              <li><label style= 'font-weight:900;'>Introduction to Data Sciences in python: </label>by University of Michigan (Grade Achieved: 90%).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+    
+
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top" style = 'padding:0.35%;position: fixed;
+bottom: 0;width: 100%;font-size: 0.84em;'>
+
+  <span>This page was last modified on Sep 03, 2018, at 10:50 AM</span><p style= 'margin:5px;'>Copyright © 2018 Chandrasekhar Reddy Muthyala</p>
+  <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+<!--   <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+</footer>
+
+</body>
+</html>
